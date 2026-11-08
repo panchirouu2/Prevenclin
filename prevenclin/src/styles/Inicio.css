@@ -1,0 +1,272 @@
+
+.inicio {
+  font-family: Arial, sans-serif;
+  color: #263b3d;
+  background: #ffffff;
+}
+
+.inicio a {
+  text-decoration: none;
+}
+
+.inicio button {
+  font: inherit;
+}
+
+/* Barra superior */
+
+.inicio-header {
+  background: white;
+  border-bottom: 1px solid #e5eeee;
+}
+
+.inicio-navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.inicio-logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #007f80;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icono {
+  background: #008b80;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+
+.inicio-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.inicio-nav a {
+  color: #385354;
+  font-size: 15px;
+}
+
+.inicio-nav a:hover {
+  color: #008b80;
+}
+
+.boton-acceso,
+.boton-principal {
+  background: #007f80;
+  color: white;
+  padding: 13px 22px;
+  border-radius: 25px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Presentación */
+
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 85px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.hero-etiqueta {
+  color: #007f80;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.16;
+  margin: 22px 0;
+}
+
+.hero h1 span {
+  color: #008b80;
+}
+
+.hero p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #607476;
+}
+
+.hero-botones {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.boton-secundario {
+  border: 1px solid #007f80;
+  color: #007f80;
+  padding: 12px 22px;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.hero-imagen img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+/* Servicios */
+
+.servicios {
+  background: #eff8f7;
+  padding: 75px 30px;
+}
+
+.seccion-titulo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.seccion-titulo h2,
+.nosotros h2,
+.acceso h2 {
+  font-size: 32px;
+}
+
+.seccion-titulo p {
+  color: #607476;
+}
+
+.servicios-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.servicio-card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+}
+
+.servicio-icono {
+  font-size: 32px;
+  color: #008b80;
+}
+
+.servicio-card h3 {
+  margin: 20px 0 12px;
+}
+
+.servicio-card p {
+  line-height: 1.6;
+  color: #607476;
+}
+
+/* Sobre nosotros */
+
+.nosotros {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  padding: 75px 30px;
+}
+
+.nosotros p {
+  color: #607476;
+  line-height: 1.8;
+}
+
+/* Accesos */
+
+.acceso {
+  background: #eff8f7;
+  text-align: center;
+  padding: 70px 30px;
+}
+
+.acceso > p {
+  color: #607476;
+}
+
+.acceso-opciones {
+  max-width: 800px;
+  margin: 35px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.acceso-card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+}
+
+.acceso-card p {
+  color: #607476;
+  line-height: 1.6;
+}
+
+.acceso-card button {
+  margin-top: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #d4e6e3;
+  color: #526866;
+  cursor: not-allowed;
+}
+
+/* Pie de página */
+
+.inicio-footer {
+  background: #075b5d;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .inicio-navbar {
+    flex-direction: column;
+  }
+
+  .inicio-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 45px 20px;
+    gap: 30px;
+  }
+
+  .hero-imagen img {
+    height: 280px;
+  }
+
+  .servicios-grid,
+  .acceso-opciones {
+    grid-template-columns: 1fr;
+  }
+}

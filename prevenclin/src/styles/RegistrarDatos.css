@@ -1,0 +1,160 @@
+
+.registro-contenedor {
+  flex: 1;
+  min-width: 0;
+  background: #f0f7f6;
+  padding: 35px;
+}
+
+.registro-header {
+  margin-bottom: 30px;
+}
+
+.registro-volver {
+  border: none;
+  background: none;
+  color: #008578;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.registro-header h1 {
+  color: #243d40;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.registro-header p,
+.registro-descripcion {
+  color: #708484;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.registro-tarjeta {
+  background: white;
+  max-width: 950px;
+  border: 1px solid #e2eeeb;
+  border-radius: 15px;
+  padding: 35px;
+  box-shadow: 0 3px 12px rgba(0, 60, 50, 0.04);
+}
+
+.registro-tarjeta h2 {
+  margin: 0 0 10px;
+  color: #243d40;
+  font-size: 20px;
+}
+
+.registro-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.registro-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.registro-campo label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #385253;
+}
+
+.registro-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d7e5e2;
+  border-radius: 9px;
+  overflow: hidden;
+  background: white;
+}
+
+.registro-input:focus-within {
+  border-color: #008578;
+}
+
+.registro-input input {
+  color: #000000;
+  min-width: 0;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 14px;
+  font-size: 15px;
+  background: transparent;
+}
+
+.registro-input span {
+  color: #718484;
+  font-size: 13px;
+  padding: 0 12px;
+}
+
+.registro-aviso {
+  background: #eaf7f2;
+  padding: 15px;
+  margin-top: 30px;
+  color: #32766c;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.registro-error {
+  color: #b42318;
+  font-size: 14px;
+}
+
+.registro-acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.registro-acciones button {
+  padding: 13px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.registro-cancelar {
+  border: 1px solid #d5e2df;
+  background: white;
+  color: #506a6a;
+}
+
+.registro-guardar {
+  border: none;
+  background: #008578;
+  color: white;
+}
+
+.registro-guardar:hover {
+  background: #006b60;
+}
+
+@media (max-width: 768px) {
+  .registro-contenedor {
+    padding: 20px;
+  }
+
+  .registro-tarjeta {
+    padding: 20px;
+  }
+
+  .registro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .registro-acciones {
+    flex-direction: column;
+  }
+}
