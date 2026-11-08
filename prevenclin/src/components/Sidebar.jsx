@@ -38,10 +38,6 @@ function Sidebar() {
         </span>
 
         <span className="sidebar-pendiente">
-          Mis medicamentos
-        </span>
-
-        <span className="sidebar-pendiente">
           Asistente de IA
         </span>
       </nav>

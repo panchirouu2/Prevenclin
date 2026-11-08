@@ -115,19 +115,6 @@ function PanelPaciente({ registros = [] }) {
 
         <div className="paciente-columnas">
           <section className="paciente-card">
-            <div className="card-encabezado">
-              <h2>Mis medicamentos</h2>
-            </div>
-
-            {paciente.medicamentos.map((medicamento) => (
-              <div
-                className="medicamento-item"
-                key={medicamento.nombre}
-              >
-                <span>{medicamento.nombre}</span>
-                <strong>{medicamento.dosis}</strong>
-              </div>
-            ))}
 
             <button className="btn-texto">
               Ver medicamentos →
