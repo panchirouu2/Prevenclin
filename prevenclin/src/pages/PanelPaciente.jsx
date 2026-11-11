@@ -48,7 +48,8 @@ function PanelPaciente({ registros = [] }) {
         <section className="paciente-card perfil-card">
           <div className="card-encabezado">
             <h2>Mi perfil</h2>
-            <button className="btn-texto">
+            <button className="btn-texto"
+              onClick={() => navigate("/paciente/seguimiento")}>
               Ver mi perfil →
             </button>
           </div>
@@ -73,7 +74,8 @@ function PanelPaciente({ registros = [] }) {
         <section className="paciente-card">
           <div className="card-encabezado">
             <h2>Mi seguimiento</h2>
-            <button className="btn-texto">
+            <button className="btn-texto"
+              onClick={() => navigate("/paciente/seguimiento")}>
               Ver seguimiento →
             </button>
           </div>

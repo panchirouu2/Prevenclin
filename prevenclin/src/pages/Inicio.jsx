@@ -1,4 +1,5 @@
 
+import medico from "../assets/medico.jpg";
 function Inicio() {
   return (
     <div className="inicio">
@@ -53,7 +54,7 @@ function Inicio() {
 
           <div className="hero-imagen">
             <img
-              src="/medico.jpg"
+              src={medico}
               alt="Profesional de salud"
             />
           </div>

@@ -28,18 +28,32 @@ function Sidebar() {
         >
           Registrar datos
         </NavLink>
-
-        <span className="sidebar-pendiente">
+        <NavLink
+          to="/paciente/historia"
+          className={({ isActive }) =>
+            isActive ? "active" : ""
+          }
+        >
           Mi perfil
-        </span>
+        </NavLink>
+        
+        <NavLink
+          to="/paciente/seguimiento"
+          className={({ isActive }) =>
+            isActive ? "active" : ""}>
+            Mi seguimiento
+        </NavLink>
 
-        <span className="sidebar-pendiente">
-          Mi seguimiento
-        </span>
-
-        <span className="sidebar-pendiente">
+        <NavLink
+          to="/paciente/medicamentos"
+          className={({ isActive }) =>
+            isActive ? "active" : ""
+          }
+        >
           Asistente de IA
-        </span>
+        </NavLink>
+
+
       </nav>
 
       <div className="sidebar-footer">
