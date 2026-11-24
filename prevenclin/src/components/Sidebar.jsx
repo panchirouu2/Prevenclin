@@ -29,12 +29,12 @@ function Sidebar() {
           Registrar datos
         </NavLink>
         <NavLink
-          to="/paciente/historia"
+          to="/paciente/perfil"
           className={({ isActive }) =>
             isActive ? "active" : ""
           }
         >
-          Mi perfil
+          Mi Perfil
         </NavLink>
         
         <NavLink

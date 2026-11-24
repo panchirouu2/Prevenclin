@@ -16,6 +16,7 @@ import RegistrarDatos from "./pages/RegistrarDatos";
 import HistoriaClinica from "./pages/HistoriaClinica";
 import IngresarMedicamentos from "./pages/IngresarMedicamentos";
 import SeguimientoPaciente from "./pages/SeguimientoPaciente";
+import MiPerfil from "./pages/MiPerfil";
 
 import "./styles/Inicio.css";
 import "./styles/App.css";
@@ -60,9 +61,12 @@ function App() {
         <Route path="/" element={<Inicio />} />
         <Route path="/login" element={<Login />} />
         <Route path="/paciente/historia" element={<HistoriaClinica onGuardarHistoria={setHistoriaClinica}/>}/>
+        <Route path="/paciente/perfil" element={<MiPerfil historiaClinica={historiaClinica} onGuardarHistoria={setHistoriaClinica} />}/>
         <Route path="/paciente/medicamentos" element={<IngresarMedicamentos />} />
         <Route path="/paciente/seguimiento" element={<SeguimientoPaciente registros={registros} historiaClinica={historiaClinica}/>}/>
-        <Route path="/paciente" element={<PanelPaciente registros={registros} />}/>
+        <Route path="/paciente" element={<PanelPaciente registros={registros} historiaClinica={historiaClinica} />}/>
+        
+
 
         <Route
           path="/paciente/registrar"
